@@ -1,0 +1,57 @@
+ .research-page {
+    padding: 40px;
+    background-color: #f4f4f4; 
+    font-family: 'Dosis', sans-serif;
+    color: #333; 
+  }
+  
+  .research-page h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .research-page p {
+    font-size: 18px;
+    color: #0b0a0a; 
+    line-height: 1.6;
+  }
+  
+  .research-section {
+    margin-top: 30px;
+  }
+  
+  .research-section h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #000; 
+  }
+  
+  .research-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .research-section ul li {
+    font-size: 18px;
+    color: #3f3e3e; 
+  }
+  
+  .research-section ul li a {
+    color: #000; 
+    text-decoration: none;
+  }
+  
+  .research-section ul li a:hover {
+    text-decoration: underline;
+    color: #444; 
+  }
+  
+  .research-section {
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  
