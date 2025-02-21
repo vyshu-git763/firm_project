@@ -1,5 +1,5 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useRef } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './Home.css'; 
 import './Navbar.css';
 
@@ -12,14 +12,27 @@ import insolvency from '../assets/images/insolvency.jpeg';
 import audit from '../assets/images/audit.jpeg';
 import sebi from '../assets/images/sebi.jpeg';
 import privateplacement from '../assets/images/privateplacement.png';
+//import Navbar from './Navbar';
+
+
 
 
 const Home = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const servicesRef = useRef(null);
+  useEffect(() => {
+    if (location.hash === "#services" && servicesRef.current) {
+      setTimeout(() => {
+        servicesRef.current.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [location]);
+
+
   return (
     <div className="home">
-
-         <section id="intro" className="intro">
+         <section id="intro"  className="intro">
         <h2>Welcome to Rahul A & Associates</h2>
         <p>
           At Rahul A & Associates, we offer expert solutions in various areas of law and compliance. 
@@ -28,7 +41,7 @@ const Home = () => {
           through our specialized services.
         </p>
       </section>
-      <section id="services" className="services">
+      <section id="services"  className="services">
         <h2>Our Services</h2>
         <div className="service-grid">
           <div className="service-item">
