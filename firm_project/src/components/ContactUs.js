@@ -14,12 +14,11 @@ const ContactUs = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent page reload
-    const form = e.target; // Get the form element
+    e.preventDefault(); 
+    const form = e.target; 
 
-    // Create FormData object to send to Web3Forms
+  
     const formDataToSend = new FormData(form);
 
     try {
@@ -30,7 +29,7 @@ const ContactUs = () => {
 
       if (response.ok) {
         alert("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" }); // Reset form
+        setFormData({ name: "", email: "", message: "" }); 
       } else {
         alert("Failed to send message. Please try again.");
       }

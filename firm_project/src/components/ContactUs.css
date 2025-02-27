@@ -80,13 +80,13 @@
     margin-bottom: 15px;
 }
 .contact-form-container {
-    margin: 50px auto; /* Center the form and add margin */
-    max-width: 500px; /* Restrict the width to avoid full-page stretch */
-    background:white; /* Light grey background */
+    margin: 50px auto; 
+    max-width: 500px; 
+    background:white; 
     padding: 30px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
 }
 
 .contact-form-container h2 {
@@ -98,7 +98,7 @@
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
     
 }
-/* Textarea Styling */
+
 .contact-textarea,
 .contact-input {
     font-family: 'Dosis', sans-serif;
@@ -109,18 +109,17 @@
     font-size: 16px;
     color: black;
     background: whitesmoke;
-    resize: none; /* Prevent dragging */
+    resize: none; 
     overflow: auto;
     display: block;
-    box-sizing: border-box; /* Ensures equal width */
-    height: 48px; /* Set the same height as the inputs */
+    box-sizing: border-box; 
+    height: 48px; 
 }
 
 .contact-textarea {
-    height: 120px; /* Keep the height for the message box */
+    height: 120px; 
 }
 
-/* When user clicks inside */
 .contact-textarea:focus {
     outline: none;
     border: 1px solid #666;
