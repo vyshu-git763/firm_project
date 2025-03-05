@@ -7,8 +7,8 @@ const AboutUs = () => {
     <div className="about-us">
       <h1>About Us</h1>
       <div>
-      <h2>
-        Welcome to <strong>Rahul A & Associates! </strong> </h2>
+      <p>
+        Welcome to <strong>Rahul A & Associates </strong>!</p>
       <p>  We are a team of dedicated professionals offering top-notch company secretary services.
         Our mission is to provide seamless solutions to meet your corporate compliance needs.
       </p>

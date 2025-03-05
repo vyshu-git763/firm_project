@@ -17,6 +17,7 @@ import privateplacement from '../assets/images/privateplacement.png';
 
 
 
+
 const Home = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -94,7 +95,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="partners">
         <h2>Founding Partners</h2>
         <div className="partners-list">
